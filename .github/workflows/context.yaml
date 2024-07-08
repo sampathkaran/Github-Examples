@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: get githu repo
-        run: echo $GITHUB.ACTION_REPOSITORY
+        run: echo $GITHUB_ACTION_REPOSITORY
