@@ -1,0 +1,13 @@
+name: context
+
+on:
+  push:
+    branches:
+    - 'main'
+
+jobs:
+  context-job:
+  runs-on: ubuntu
+  steps:
+    - name: get githu repo
+      run: echo ${{github.action_repository}}
