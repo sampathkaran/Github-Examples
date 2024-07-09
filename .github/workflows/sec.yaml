@@ -8,10 +8,12 @@ on:
 jobs:
   secrer-variable:
     runs-on: ubuntu-latest
+    env:
+      MY_APP_ID: ${{ var.APP_ID}}
     steps:
       - name: check variable
         run : echo "My app is ${{vars.APP_ID}}"
       - name: tell me a secret
         run: echo "THe secret is ${{ secrets.API_KEY }}"
       - name: get env var
-        run: echo "the env var is ${{ env.APP_ID }}"
+        run: echo "the env var is ${{ env.APP_ID }}" and ${{var.MY_APP_ID}}
