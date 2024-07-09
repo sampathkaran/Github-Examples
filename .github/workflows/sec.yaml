@@ -11,3 +11,5 @@ jobs:
     steps:
       - name: check variable
         run : echo "My app is ${{vars.APP_ID}}"
+      - name: tell me a secret
+        run: echo "THe secret is {{ secrets.API_KEY }}"
