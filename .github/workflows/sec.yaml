@@ -1,0 +1,13 @@
+name: secrets and vairables
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  secrer-variable:
+    runs-on: ubuntu-latest
+    steps:
+      - name: check variable
+        run : echo "My app is ${{vars.APP_ID}}"
