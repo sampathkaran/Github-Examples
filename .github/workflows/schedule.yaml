@@ -1,0 +1,8 @@
+on:
+  schedule:
+    - cron: '*/3 * * * *'
+jobs:
+  scheduleJob:
+    runs-on: ubuntu-latest
+    steps:
+      echo "The current system tims is $(time)"
