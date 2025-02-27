@@ -5,5 +5,5 @@ jobs:
   scheduleJob:
     runs-on: ubuntu-latest
     steps:
-      -name: Show Current Time
-      run: echo "Current time is $(time)"
+      - name: Show Current Time
+        run: echo "Current time is $(time)"
