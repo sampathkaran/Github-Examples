@@ -11,10 +11,9 @@ jobs:
   multieventJob:
     runs-on: ubuntu-latest
     steps:
-      - name: "echo basic info"
+      - name: "echo basic infos"
         run: |
           echo "REF: $GITHUB_REF"
           echo "Job_ID: $GITHUB_JOB"
           echo "Action: $GITHUB_ACTION"
           echo "Actor: $GITHUB_ACTOR"
-          

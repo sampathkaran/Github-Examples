@@ -1,0 +1,16 @@
+name: coniditon
+
+on: [push]
+
+jobs:
+  conditonalJob:
+    if: github.repository == 'octo-org/octo-repo-prod'
+    runs-on: ubuntu-latest
+    steps:
+      - name: "script"
+        run: echo "Hello world"
+  noncponditon:
+    runs-on: ubuntu
+    steps:
+      - name: "script2"
+        run: echo "hello moon"
