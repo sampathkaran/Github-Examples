@@ -1,5 +1,5 @@
 name: workflow commands
-
+on: ['push']
 jobs:
   myGroupJob:
     runs-on: ubuntu-latest
