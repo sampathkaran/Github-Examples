@@ -2,7 +2,7 @@ on:
   schedule:
     - cron: '*/3 * * * *'
 jobs:
-  scheduleJob:
+  scheduleJo:
     runs-on: ubuntu-latest
     steps:
       - name: Show Current Time
