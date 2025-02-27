@@ -10,7 +10,7 @@ jobs:
       - name: "script"
         run: echo "Hello world"
   noncponditon:
-    runs-on: ubuntu
+    runs-on: ubuntu-latest
     steps:
       - name: "script2"
         run: echo "hello moon"
