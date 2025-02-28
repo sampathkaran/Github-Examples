@@ -1,0 +1,10 @@
+name: context
+
+on: [push]
+
+jobs:
+  contextJob:
+    runs-on: ubuntu-latest
+    env:
+      MY_ENV: {{github.actions}}
+    run: echo "$MY_ENV"
