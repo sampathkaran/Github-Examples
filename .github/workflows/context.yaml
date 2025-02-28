@@ -1,6 +1,6 @@
 name: context
 
-on: [push]
+on: ['push']
 
 jobs:
   contextJob:
