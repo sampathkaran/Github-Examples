@@ -8,7 +8,7 @@ jobs:
     steps:
       - name: "step1"
         env:
-          MY_ENV: ${{ github.actions }}
+          MY_ENV: ${{ github.action }}
           MY_ACTOR: ${{ github.actor }}
         run: |
          echo "$MY_ENV"
