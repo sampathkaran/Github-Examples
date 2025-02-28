@@ -2,11 +2,12 @@ name: context
 
 on: [push]
 
+env:
+  MY_ENV: {{github.actions}}
+  
 jobs:
   contextJob:
     runs-on: ubuntu-latest
     steps:
       name: "step1"
-      env:
-        MY_ENV: {{github.actions}}
       run: echo "$MY_ENV"
